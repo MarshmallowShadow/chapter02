@@ -9,6 +9,19 @@ public class Goods {
 		this.price = price;
 	}
 	
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setPrice(int price) {
+		if(price < 0) {
+			this.price = 0;
+		} else {
+			this.price = price;
+		}
+	}
+	
 	public String getName() {
 		return name;
 	}
