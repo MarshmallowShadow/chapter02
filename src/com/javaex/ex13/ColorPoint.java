@@ -3,11 +3,12 @@ package com.javaex.ex13;
 public class ColorPoint extends Point {
 	private String color;
 	
-	public ColorPoint() {}
+	public ColorPoint() {
+		super();
+	}
 	public ColorPoint(String color) {
+		super();
 		this.color = color;
-		super.setX(0);
-		super.setY(0);
 	}
 	public ColorPoint(int x, int y, String color) {
 		super(x, y);
