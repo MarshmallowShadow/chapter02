@@ -1,6 +1,6 @@
-package com.javaex.ex16;
+package com.javaex.ex17;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
 	private int radius;
 	
 	public Circle() { 
@@ -29,7 +29,7 @@ public class Circle extends Shape {
 				+ radius + "]";
 	}
 	public void draw() {
-		System.out.println("면색:" + super.getFillColor() + ", 선색:" + super.getLineColor() + ", 반지름:" + radius + " 원을 그렸습니다.");
+		System.out.println("[면색:" + super.getFillColor() + ", 선색:" + super.getLineColor() + ", 반지름:" + radius + "] 원을 그렸습니다.");
 	}
 	public double area() {
 		double area = Math.PI * Math.pow(radius, 2);

@@ -1,6 +1,6 @@
-package com.javaex.ex16;
+package com.javaex.ex18;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
 	private int width;
 	private int height;
 	
@@ -39,8 +39,8 @@ public class Rectangle extends Shape {
 				+ width + ", height" + height + "]";
 	}
 	public void draw() {
-		System.out.println("면색:" + super.getFillColor() + ", 선색:" + super.getLineColor() + ", 가로:" + width 
-				+ ", 세로:" + height + " 사각형을 그렸습니다.");
+		System.out.println("[면색:" + super.getFillColor() + ", 선색:" + super.getLineColor() + ", 가로:" + width 
+				+ ", 세로:" + height + "] 사각형을 그렸습니다.");
 	}
 	public double area() {
 		double area = width * height;

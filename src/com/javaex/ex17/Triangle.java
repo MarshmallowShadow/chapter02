@@ -1,20 +1,20 @@
-package com.javaex.ex16;
+package com.javaex.ex17;
 
-public class Rectangle extends Shape {
+public class Triangle extends Shape implements Drawable {
 	private int width;
 	private int height;
 	
-	public Rectangle() {
+	public Triangle() {
 		super();
-		width = 2;
+		width = 1;
 		height = 1;
 	}
-	public Rectangle(int width, int height) {
+	public Triangle(int width, int height) {
 		super();
 		this.width = width;
 		this.height = height;
 	}
-	public Rectangle(String fillColor, String lineColor, int width, int height) {
+	public Triangle(String fillColor, String lineColor, int width, int height) {
 		super(fillColor, lineColor);
 		this.width = width;
 		this.height = height;
@@ -35,16 +35,15 @@ public class Rectangle extends Shape {
 	
 	@Override
 	public String toString() {
-		return "Rectangle[fillColor=" + super.getFillColor() + ", lineColor=" + super.getLineColor() + ", width="
+		return "Triangle[fillColor=" + super.getFillColor() + ", lineColor=" + super.getLineColor() + ", width="
 				+ width + ", height" + height + "]";
 	}
 	public void draw() {
-		System.out.println("면색:" + super.getFillColor() + ", 선색:" + super.getLineColor() + ", 가로:" + width 
-				+ ", 세로:" + height + " 사각형을 그렸습니다.");
+		System.out.println("[면색:" + super.getFillColor() + ", 선색:" + super.getLineColor() + ", 가로:" + width 
+				+ ", 세로:" + height + "] 삼각형을 그렸습니다.");
 	}
 	public double area() {
-		double area = width * height;
+		double area = (width * height) / 2;
 		return area;
 	}
-	
 }

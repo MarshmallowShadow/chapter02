@@ -1,4 +1,4 @@
-package com.javaex.ex16;
+package com.javaex.ex18;
 
 public abstract class Shape {
 	private String fillColor;
@@ -30,8 +30,6 @@ public abstract class Shape {
 	public String toString() {
 		return "Shape[fillcolor=" + fillColor + ", lineColor=" + lineColor + "]";
 	}
-	
-	public abstract void draw();
 	
 	public abstract double area();
 }
